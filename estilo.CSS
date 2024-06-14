@@ -1,0 +1,307 @@
+body {
+    font-family: 'Display';
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #fff;
+    line-height: 1.0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background:#333;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #000000;
+}
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  p {
+      font-size: 1em;
+  }
+
+  .image {
+      width: 80%;
+  }
+}
+
+/* Ajustes para telas médias */
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  p {
+      font-size: 1.1em;
+  }
+
+  .image {
+      width: 70%;
+  }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1025px) {
+  h1 {
+      font-size: 2.5em;
+  }
+
+  p {
+      font-size: 1.2em;
+  }
+
+  .image {
+      width: 60%;
+  }
+}
+
+.container {
+width: 100%;
+padding: 10px;
+}
+.menu {
+display: flex;
+flex-direction: column;
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: black;
+color: #fff;
+padding: 10px;
+text-align: right;
+z-index: 1000;
+transform: translateY(-100%); /* Inicialmente esconde o cabeçalho */
+    transition: transform 0.3s ease-in-out; /* Animação para aparecer e desaparecer */
+}
+header.show {
+  transform: translateY(0); /* Mostra o cabeçalho */
+}
+
+header nav ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+}
+
+header nav ul li {
+  display: inline; /* Exibe os itens da lista em linha */
+  margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+header nav ul li a {
+  color: white; /* Cor dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+main {
+  margin-top: 70px; /* Espaçamento para não esconder o conteúdo sob o cabeçalho fixo */
+  padding: 20px; /* Espaçamento interno do conteúdo principal */
+}
+
+section {
+  margin-bottom: 50px; /* Espaçamento entre as seções */
+}
+
+section h2 {
+  margin-top: 0; /* Remove margem superior do título */
+}
+.header-image {
+    height: 50px;
+    width: 60px;
+    float: left;
+    margin: 0;
+      align-items: center;
+  }
+  h1{
+    font-size: 30px;
+  }
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #2689f2;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section {
+    padding: 2rem 1rem;
+}
+.home {
+  background-color: #404040;
+  margin: 0;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+.services, .portfolio, .about, .contact {
+    text-align: center;
+}
+.services img {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+}
+.container {
+      display: flex;
+      gap: 20px; /* Espaçamento entre os pares de título e parágrafo */
+    }
+    .item {
+      display: flex;
+      flex-direction: column; /* Título e parágrafo em coluna */
+    }
+    .item h2, .item p {
+      margin: 0;
+    }
+    .item h2 {
+      margin-bottom: 10px;
+}
+    .item img{
+      max-width: 90px;
+      margin: 1rem;
+      align-self: center;
+    }
+
+    #hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 0 20px;
+  }
+  
+  #hero .content {
+      max-width: 600px;
+  }
+  
+  #hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+  }
+  
+  #hero p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+  }
+  
+  /* Estilos dos botões de chamada para ação */
+  .cta-buttons {
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  /* Estilos dos botões */
+  .cta {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efeito hover */
+  .cta:hover {
+      background-color: #383838;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+  }
+  
+  /* Estilos do botão "Solicite um Orçamento" */
+  .cta-buttons .cta:first-child {
+      background-color: #28a745; /* Cor personalizada */
+  }
+
+  .cta-buttons .cta:first-child:hover {
+      background-color: #218838; /* Cor personalizada ao passar o mouse */
+  }
+  
+  /* Estilos do botão "Veja nosso Portfólio" */
+  .cta-buttons .cta:last-child {
+      background-color: black; /* Cor personalizada */
+      color: #ffffff; /* Cor do texto */
+  }
+  
+  .cta-buttons .cta:last-child:hover {
+      background-color: #383838; /* Cor personalizada ao passar o mouse */
+  }
+
+.centered-list {
+    list-style-position: inside; /* Opção para alinhar os números dentro da lista */
+    margin: 0 auto; /* Centraliza a lista horizontalmente */
+    padding: 0; /* Remove o padding padrão */
+    text-align: center; /* Centraliza o texto da lista */
+    font-size: 20px;
+}
+
+
+.centered-list li {
+    text-align: left; /* Opcional: alinha o texto dos itens à esquerda */
+}
+
+.portfolio img{
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+}
+.contact img {
+  max-width: 50px;
+  margin: 1rem;
+}
+.redes img {
+  max-width: 50px;
+  margin: 1rem;
+}
+.about{
+  margin: 50px;
+}
+footer {
+    background: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+footer a {
+  margin: 0 10px;
+ text-decoration: none;
+}
+.image-container {
+display: flex;
+gap: 2px;
+justify-content: center;
+align-items: center;
+}
+
+.image-link {
+display: inline-block;
+}
